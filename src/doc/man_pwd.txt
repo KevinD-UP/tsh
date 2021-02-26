@@ -1,0 +1,38 @@
+
+
+PWD(1L)           Manuel de l'utilisateur Linux           PWD(1L)
+
+
+NOM
+       pwd - Afficher le nom du répertoire de travail en cours.
+
+SYNOPSIS
+       pwd
+       pwd {--help,--version}
+
+DESCRIPTION
+       Cette  page  de  manuel  documente  la  version GNU de pwd
+       ([NDT] pwd = Print Working Directory).
+
+       pwd affiche le nom complet du répertoire en cours.
+
+       Ceci signifie que tous les composants  du  chemin  affiché
+       seront de vrais répertoires, aucun lien symbolique ne sera
+       présent.
+
+       Remarquez que la plupart des shells Unix  disposent  d'une
+       commande  pwd  intégrée  ayant  les mêmes fonctionnalités.
+       Ainsi la simple évocation de pwd exécutera généralement la
+       version intégrée, et non pas celle documentée ici.
+
+   OPTIONS
+       --help Afficher  un  message d'aide sur la sortie standard
+              et terminer normalement.
+
+       --version
+              Afficher un numéro de version sur la  sortie  stan­
+              dard et terminer normalement.
+
+
+TRADUCTION
+       Christophe Blaess, 1997.

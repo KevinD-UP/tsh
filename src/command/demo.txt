@@ -1,0 +1,37 @@
+echo "launching tests !"
+ls
+ls | head | grep tar
+ls | grep mk | grep tar > file_test.txt
+cat file_test.txt
+mkdir ROOT
+mkdir ROOT2
+touch file1.txt
+echo HelloWorld! > file1.txt
+cat < file1.txt
+cd ROOT
+mkdir FOLDER1 FOLDER2
+touch file2.txt
+cd FOLDER1
+touch file3.txt
+cd ../..
+tar -cvf ROOT.tar ROOT file1.txt ROOT2
+pwd
+cd ROOT.tar
+pwd
+ls
+cd ROOT/
+ls -l FOLDER1/file3.txt trucPasLa FOLDER2/
+cd FOLDER1/
+ls
+cd ../..
+cat file1.txt
+cp file1.txt file1_bis.txt
+ls -l
+rm file1.txt
+ls -l
+cat file1_bis.txt
+cd ../
+ls
+tar -vxf ROOT.tar
+ls
+cd ..
